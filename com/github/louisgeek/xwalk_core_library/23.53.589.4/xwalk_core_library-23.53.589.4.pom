@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.louisgeek</groupId>
   <artifactId>xwalk_core_library</artifactId>
   <version>23.53.589.4</version>
   <packaging>aar</packaging>
-  <description>23.53.589.4 fixed</description>
+  <!--
+  Crosswalk itself does not depend on external libraries, but it inherits
+        some dependencies from Chromium itself.
+ -->
   <dependencies>
     <dependency>
-      <groupId>androidx.multidex</groupId>
-      <artifactId>multidex</artifactId>
-      <version>2.0.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.appcompat</groupId>
-      <artifactId>appcompat</artifactId>
-      <version>1.1.0</version>
-      <scope>compile</scope>
+      <groupId>com.android.support</groupId>
+      <artifactId>support-v4</artifactId>
+      <version>[13.0.0,)</version>
+      <!--  >= 13.0.0  -->
+      <scope>runtime</scope>
     </dependency>
   </dependencies>
 </project>
