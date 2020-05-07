@@ -6,9 +6,9 @@ xwalkview 解决打开没有 ssl 证书的 https 网址可能会报 request was 
   allprojects {
   	repositories {
 		...
-		//github or gitee
-		maven { url "https://raw.githubusercontent.com/louisgeek/xwalk_core_library/master" }
-		//maven { url "https://gitee.com/louisgeek/xwalk_core_library/raw/master" }
+		//github
+		   // maven { url "https://raw.githubusercontent.com/louisgeek/maven/master" }
+			maven { url "https://code.aliyun.com/louisgeek/maven/raw/master" }
         
   	}
   }
